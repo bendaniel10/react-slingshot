@@ -41,9 +41,9 @@ workflows:
   node-tests:
     jobs:
       - build
-      - test
+      - test:
           requires:
             - build
-      - analzye
+      - analzye:
           requires:
             - test
