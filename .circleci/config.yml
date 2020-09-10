@@ -16,7 +16,7 @@ jobs:
       - run: npm run lint
   
   test:
-     docker:
+    docker:
       - image: circleci/node:18.8.0
     steps:
       - checkout
@@ -27,7 +27,7 @@ jobs:
       - run: npm run test   
 
   analzye:
-     docker:
+    docker:
       - image: circleci/node:18.8.0
     steps:
       - checkout
